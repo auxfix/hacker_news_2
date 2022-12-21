@@ -7,7 +7,10 @@
   "scripts": {
     "build": "turbo run build",
     "lint": "turbo run lint",
-    "validate": "turbo run build lint test"
+    "validate": "turbo run build lint test",
+    "validate:graph": "turbo run build test lint --graph=hn_graph.png",
+    "validate:profile": "turbo run build test lint --cpuprofile=hn_profile"
+    
   },
   "author": "",
   "license": "ISC",
