@@ -14,7 +14,8 @@
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "uikit"
   ],
   "devDependencies": {
     "husky": "^8.0.2",
