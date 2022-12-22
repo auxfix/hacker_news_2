@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { SuperButton } from 'uikit';
 import reactLogo from './assets/react.svg';
 import styles from './App.module.scss';
 
@@ -17,7 +16,6 @@ function App() {
         </a>
       </div>
       <h1>Vite + React aux_edit_0.1 no button</h1>
-      <SuperButton />
       <div className={styles.card}>
         <button type="button" onClick={() => setCount((countLocal) => countLocal + 1)}>
           count is {count}
