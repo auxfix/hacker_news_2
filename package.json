@@ -10,7 +10,6 @@
     "validate": "turbo run build lint test",
     "validate:graph": "turbo run build test lint --graph=hn_graph.png",
     "validate:profile": "turbo run build test lint --cpuprofile=hn_profile"
-    
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +17,8 @@
     "apps/*"
   ],
   "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-react-app": "^7.0.1",
     "turbo": "^1.6.3"
   }
 }
