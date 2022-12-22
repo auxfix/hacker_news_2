@@ -11,11 +11,23 @@
     "lint:es": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:style": "stylelint \"**/*{css,scss,sass}\"",
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" --config ./.prettierrc",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint-web": "lint-staged"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx}": [
+      "eslint --quiet --fix"
+    ],
+    "*.{json,md,html,js,jsx,ts,tsx}": [
+      "prettier --write"
+    ],
+    "*.{css,scss,sass}": [
+      "stylelint"
+    ]
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
