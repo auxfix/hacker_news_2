@@ -1,0 +1,69 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js build
+
+PATH: 
+  C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\OpenJDK\openjdk-8u262-b10\bin;C:\Program Files\Git\cmd;C:\Program Files\Nordic Semiconductor\nrf-command-line-tools\bin\;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\music\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\PuTTY\;C:\Program Files\Go\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs;C:\Program Files\Graphviz\bin;C:\Users\music\scoop\shims;C:\Users\music\AppData\Local\Microsoft\WindowsApps;C:\Users\music\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\JetBrains\WebStorm 2020.2.3\bin;C:\Users\music\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\music\go\bin;C:\Program Files (x86)\Nmap;C:\Users\music\AppData\Local\JetBrains\Toolbox\scripts
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.3.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: G:\code\hacker_news_2\uikit\package.json: Expected double-quoted property name in JSON at position 554
+      at JSON.parse (<anonymous>)
+      at C:\Users\music\AppData\Roaming\nvm\v19.3.0\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\music\AppData\Roaming\nvm\v19.3.0\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\music\AppData\Roaming\nvm\v19.3.0\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "uikit",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@types/react": "^18.0.26",
+      "@types/react-dom": "^18.0.9",
+      "@vitejs/plugin-react": "^3.0.0",
+      "typescript": "^4.9.3",
+      "vite": "^4.0.0",
+      "vite-plugin-dts": "^1.7.1"
+    },
+    "peerDependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+    },
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/uikit.umd.js",
+    "module": "./dist/uikit.es.js",
+    "types": "./dist/uikit.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/uikit.es.js",
+            "require": "./dist/uikit.umd.js"
+        }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
