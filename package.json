@@ -17,8 +17,6 @@
     "apps/*"
   ],
   "devDependencies": {
-    "eslint": "^8.30.0",
-    "eslint-config-react-app": "^7.0.1",
     "turbo": "^1.6.3"
   }
 }
