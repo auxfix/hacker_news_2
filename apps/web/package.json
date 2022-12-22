@@ -10,6 +10,7 @@
     "lint:ts": "tsc",
     "lint:es": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:style": "stylelint \"**/*{css,scss,sass}\"",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" --config ./.prettierrc",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -25,9 +26,11 @@
     "eslint": "^8.30.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
     "install-peers": "^1.0.4",
     "postcss-html": "^1.5.0",
+    "prettier": "^2.8.1",
     "sass": "^1.57.1",
     "stylelint": "^14.16.0",
     "stylelint-config-prettier": "^9.0.4",

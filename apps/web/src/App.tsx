@@ -18,21 +18,13 @@ function App() {
       <h1>Vite + React aux_edit</h1>
       <div className={styles.card}>
         <button type="button" onClick={() => setCount((countLocal) => countLocal + 1)}>
-          count is
-          {' '}
-          {count}
+          count is {count}
         </button>
         <p>
-          Edit
-          {' '}
-          <code>src/App.tsx</code>
-          {' '}
-          and save to test HMR
+          Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className={styles.readTheDocs}>
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className={styles.readTheDocs}>Click on the Vite and React logos to learn more</p>
     </div>
   );
 }
