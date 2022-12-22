@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { SuperButton } from 'uikit';
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
@@ -18,6 +19,7 @@ export default function Home() {
         <div className={styles.description}>
           <p>
             Get started by editing aux_edit&nbsp;
+            <SuperButton/>
             <code className={styles.code}>pages/index.tsx</code>
           </p>
           <div>
